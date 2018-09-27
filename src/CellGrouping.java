@@ -15,6 +15,19 @@ class CellGrouping {
     return this.group[0].col;
   }
 
+  public void update() {
+    for(Cell c : this.group) {
+      if (c instanceof SolvedCell) {
+        removeFromPossible(((SolvedCell) c).value);
+      }
+    }
+  }
+
+  private void removeFromPossible(int i) {
+
+  }
+
+
   public String toString() {
     String s = "";
     for(Cell c : group) {

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 abstract class Cell {
   public int row;
@@ -30,7 +31,7 @@ class UnsolvedCell extends Cell {
   UnsolvedCell(int row, int col) {
     this.row = row;
     this.col = col;
-    this.possibleValues = new ArrayList<Integer>();
+    this.possibleValues = new ArrayList<Integer>(Arrays.asList(1,2,3,4,5,6,7,8,9));
   }
 
   public String toString() {
