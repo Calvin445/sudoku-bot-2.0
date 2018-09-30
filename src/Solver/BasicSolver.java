@@ -2,7 +2,7 @@ package Solver;
 
 import java.util.ArrayList;
 
-class BasicSolver implements SudokuSolver {
+public class BasicSolver implements SudokuSolver {
 
   Cell[][] board;
   CellGrouping[] groupings;
